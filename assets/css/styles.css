@@ -1,0 +1,374 @@
+@font-face {
+    font-family: FranklinBold;
+    src: local('Franklin Bold'), local('Franklin-Bold'), url('../fonts/FranklinGothicBookXCmpC-Bol.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Franklin;
+    src: local('Franklin'), local('Franklin'), url('../fonts/FranklinGothicBookXCmpC.TTF');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color: black;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid{
+    width: 96%;
+    margin: 0 2% 0 2%;
+}
+
+
+.center-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header{
+    font-family: FranklinBold;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 3.3vw;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.left-time img{
+    width: 69%;
+    float: left;
+}
+
+.right-time img{
+    width: 69%;
+    float: right;
+}
+
+.piter_by img{
+    width: 110%;
+    margin-left: -5%;
+}
+
+.kasta img{
+    width: 110%;
+    margin-left: 5%;
+}
+
+.watch_trailer{
+    font-size: 1.8vw;
+    padding: 3% 5% 2% 5%;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    color: #ffffff !important;
+    background: #f7be16;
+    font-family: Franklin;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+.watch_trailer:hover{
+    color: #f7c01b !important;
+    background: #ffffff;
+}
+
+.starring p{
+    font-family: Franklin;
+    text-align: center;
+    font-size: 2.4vw;
+    letter-spacing: 2px;
+    color: #e9b315;
+}
+
+.roles p{
+    font-family: Franklin;
+    font-weight: 100;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.social_icons{
+    margin-top: 0.8em;
+}
+
+.icon{
+    width: 2.6vw;
+    height: 2.6vw;
+    text-align: center;
+    padding: 0.5vw 0;
+    line-height: 0.1;
+    border-radius: 100%;
+    background: #fff;
+    color: #000000;
+}
+
+.icon:hover{
+    background: #f7be16;
+    color: #000000;
+}
+
+.icon i{
+    font-size: 1.5vw;
+}
+
+.icon_img{
+    max-width: 100%;
+}
+
+#vk{
+    margin-top: 20%;
+}
+/* ----------------------------------------------------- */
+
+.is_overlay{ display: block; width: 100%; height: 100%; }
+
+#preloader {
+    margin: auto;
+    left: 0; top: 0; right: 0; bottom: 0;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    vertical-align: middle;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#wait {
+    -webkit-animation: spin 1.2s infinite linear;
+    -moz-animation: spin 1.2s infinite linear;
+    -ms-animation: spin 1.2s infinite linear;
+    -o-animation: spin 1.2s infinite linear;
+    animation: spin 1.2s infinite linear;
+    font-size: 4em;
+    color: white;
+}
+
+#trailer {
+    position: fixed;
+    z-index: -100;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 9.3s;
+    -webkit-transition: opacity 9.3s;
+    -moz-transition: opacity 9.3s;
+    -ms-transition: opacity 9.3s;
+    -o-transition: opacity 9.3s;
+}
+#trailer > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+    #trailer > video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    #trailer > video { width: 300%; left: -100%; }
+}
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+    #trailer > video {
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* For mobile */
+/*@media screen and (max-width: 540px) {*/
+    /*header{*/
+        /*font-size: 0.6em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 0.6em;*/
+    /*}*/
+
+    /*#bottom_part{*/
+        /*top: 78%;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 0.36em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 0.24em;*/
+    /*}*/
+/*}*/
+
+/*!* For Tablets *!*/
+/*@media screen and (min-width: 540px) and (max-width: 780px) {*/
+    /*header {*/
+        /*font-size: 1.2em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 0.8em;*/
+    /*}*/
+
+    /*#bottom_part h5 {*/
+        /*font-size: 0.72em;*/
+    /*}*/
+
+    /*#bottom_part p {*/
+        /*font-size: 0.6em;*/
+    /*}*/
+/*}*/
+
+/*!* For small screens *!*/
+/*@media screen and (min-width: 780px) and (max-width: 980px) {*/
+    /*header{*/
+        /*font-size: 1.8em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 1em;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 1.08em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 0.8em;*/
+    /*}*/
+/*}*/
+
+/*!* For small screens *!*/
+/*@media screen and (min-width: 980px) and (max-width: 1280px) {*/
+    /*header{*/
+        /*font-size: 2.4em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 1.2em;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 1.44em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 1em;*/
+    /*}*/
+/*}*/
+
+/*!* For big screens *!*/
+/*@media screen and (min-width: 1280px) and (max-width: 1480px) {*/
+    /*header{*/
+        /*font-size: 3em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 1.4em;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 1.8em;*/
+    /*}*/
+
+
+    /*#bottom_part p{*/
+        /*font-size: 1.2em;*/
+    /*}*/
+/*}*/
+
+/*!* For very big screens *!*/
+/*@media screen and (min-width: 1480px) and (max-width: 1680px) {*/
+    /*header{*/
+        /*font-size: 3.6em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 1.6em;*/
+    /*}*/
+
+    /*#bottom_part{*/
+        /*top: 75%;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 2.16em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 1.4em;*/
+    /*}*/
+/*}*/
+
+/*!* For very very big screens *!*/
+/*@media screen and (min-width: 1680px) and (max-width: 1980px) {*/
+    /*header{*/
+        /*font-size: 4.2em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 1.8em;*/
+    /*}*/
+
+    /*#bottom_part{*/
+        /*top: 75%;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 2.52em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 1.6em;*/
+    /*}*/
+/*}*/
+
+/*!* For very very very big screens *!*/
+/*@media screen and (min-width: 1980px){*/
+    /*header{*/
+        /*font-size: 4.8em;*/
+    /*}*/
+
+    /*#watch_trailer a{*/
+        /*font-size: 2em;*/
+    /*}*/
+
+    /*#bottom_part{*/
+        /*top: 75%;*/
+    /*}*/
+
+    /*#bottom_part h5{*/
+        /*font-size: 2.88em;*/
+    /*}*/
+
+    /*#bottom_part p{*/
+        /*font-size: 1.8em;*/
+    /*}*/
+/*}*/

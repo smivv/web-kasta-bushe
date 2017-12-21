@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/smivv/web-kasta-bushe#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "modal-video": "^2.2.0"
   }
 }

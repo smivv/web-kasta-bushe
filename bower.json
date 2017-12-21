@@ -23,6 +23,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "bowser": "^1.9.0",
+    "font-awesome": "^4.7.0"
   }
 }
