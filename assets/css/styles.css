@@ -11,7 +11,39 @@
     font-weight: normal;
 }
 
-body {
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes spinner {
+    from {
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    to {
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+html {
+    font-size: 100%;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: table-cell;
+    vertical-align: middle;
     margin:0;
     padding:0;
     width:100%;
@@ -29,6 +61,15 @@ body {
 .container-fluid{
     width: 96%;
     margin: 0 2% 0 2%;
+}
+
+#enter{
+    opacity: 0;
+    transition: opacity 9.3s;
+    -webkit-transition: opacity 9.3s;
+    -moz-transition: opacity 9.3s;
+    -ms-transition: opacity 9.3s;
+    -o-transition: opacity 9.3s;
 }
 
 
@@ -157,8 +198,8 @@ header{
     margin: auto;
     left: 0; top: 0; right: 0; bottom: 0;
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     text-align: center;
     vertical-align: middle;
     transition: opacity .3s;
@@ -169,17 +210,28 @@ header{
     background-color: black;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 0.5em;
 }
 
 #wait {
-    -webkit-animation: spin 1.2s infinite linear;
-    -moz-animation: spin 1.2s infinite linear;
-    -ms-animation: spin 1.2s infinite linear;
-    -o-animation: spin 1.2s infinite linear;
-    animation: spin 1.2s infinite linear;
     font-size: 4em;
     color: white;
+}
+
+.spinner{
+    display: inline-block;
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.2s;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 #trailer {
@@ -386,3 +438,7 @@ header{
         /*font-size: 1.8em;*/
     /*}*/
 /*}*/
+
+
+/* ---------------- */
+
