@@ -163,6 +163,15 @@ header{
     margin-top: 0.8em;
 }
 
+.social_icons .row{
+    padding-left: 2vw;
+}
+
+.social_icons .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .icon{
     width: 2.6vw;
     height: 2.6vw;
