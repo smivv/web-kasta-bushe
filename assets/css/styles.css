@@ -87,7 +87,6 @@ header{
     font-weight: 100;
     font-size: 3.3vw;
     color: white;
-    margin-bottom: 3%;
 }
 
 .left-time img{
@@ -161,15 +160,6 @@ header{
 
 .social_icons{
     margin-top: 0.8em;
-}
-
-.social_icons .row{
-    padding-left: 2vw;
-}
-
-.social_icons .col{
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .icon{
@@ -279,175 +269,49 @@ header{
     }
 }
 
-/* For mobile */
-/*@media screen and (max-width: 540px) {*/
-    /*header{*/
-        /*font-size: 0.6em;*/
-    /*}*/
+/* xs */
+@media screen and (max-width: 767px) {
+    header{
+        font-size: 4vw;
+    }
 
-    /*#watch_trailer a{*/
-        /*font-size: 0.6em;*/
-    /*}*/
+    .kasta{
+        margin-top: -8vw;
+        margin-bottom: 3vw;
+    }
 
-    /*#bottom_part{*/
-        /*top: 78%;*/
-    /*}*/
+    .watch_trailer{
+        font-size: 6vw;
+        margin-left: 0;
+        margin-bottom: 2vw;
+        padding: 1% 7% 0% 7%;
+    }
 
-    /*#bottom_part h5{*/
-        /*font-size: 0.36em;*/
-    /*}*/
+    .starring p{
+        font-size: 5vw;
+    }
 
-    /*#bottom_part p{*/
-        /*font-size: 0.24em;*/
-    /*}*/
-/*}*/
+    .roles p{
+        font-size: 5vw;
+    }
 
-/*!* For Tablets *!*/
-/*@media screen and (min-width: 540px) and (max-width: 780px) {*/
-    /*header {*/
-        /*font-size: 1.2em;*/
-    /*}*/
+    .icon{
+        width: 7vw;
+        height: 7vw;
+        padding: 1vw 0;
+    }
 
-    /*#watch_trailer a{*/
-        /*font-size: 0.8em;*/
-    /*}*/
+    .icon i{
+        font-size: 4.5vw;
+    }
+}
 
-    /*#bottom_part h5 {*/
-        /*font-size: 0.72em;*/
-    /*}*/
+/* sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
-    /*#bottom_part p {*/
-        /*font-size: 0.6em;*/
-    /*}*/
-/*}*/
+}
 
-/*!* For small screens *!*/
-/*@media screen and (min-width: 780px) and (max-width: 980px) {*/
-    /*header{*/
-        /*font-size: 1.8em;*/
-    /*}*/
+/* md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
 
-    /*#watch_trailer a{*/
-        /*font-size: 1em;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 1.08em;*/
-    /*}*/
-
-    /*#bottom_part p{*/
-        /*font-size: 0.8em;*/
-    /*}*/
-/*}*/
-
-/*!* For small screens *!*/
-/*@media screen and (min-width: 980px) and (max-width: 1280px) {*/
-    /*header{*/
-        /*font-size: 2.4em;*/
-    /*}*/
-
-    /*#watch_trailer a{*/
-        /*font-size: 1.2em;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 1.44em;*/
-    /*}*/
-
-    /*#bottom_part p{*/
-        /*font-size: 1em;*/
-    /*}*/
-/*}*/
-
-/*!* For big screens *!*/
-/*@media screen and (min-width: 1280px) and (max-width: 1480px) {*/
-    /*header{*/
-        /*font-size: 3em;*/
-    /*}*/
-
-    /*#watch_trailer a{*/
-        /*font-size: 1.4em;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 1.8em;*/
-    /*}*/
-
-
-    /*#bottom_part p{*/
-        /*font-size: 1.2em;*/
-    /*}*/
-/*}*/
-
-/*!* For very big screens *!*/
-/*@media screen and (min-width: 1480px) and (max-width: 1680px) {*/
-    /*header{*/
-        /*font-size: 3.6em;*/
-    /*}*/
-
-    /*#watch_trailer a{*/
-        /*font-size: 1.6em;*/
-    /*}*/
-
-    /*#bottom_part{*/
-        /*top: 75%;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 2.16em;*/
-    /*}*/
-
-    /*#bottom_part p{*/
-        /*font-size: 1.4em;*/
-    /*}*/
-/*}*/
-
-/*!* For very very big screens *!*/
-/*@media screen and (min-width: 1680px) and (max-width: 1980px) {*/
-    /*header{*/
-        /*font-size: 4.2em;*/
-    /*}*/
-
-    /*#watch_trailer a{*/
-        /*font-size: 1.8em;*/
-    /*}*/
-
-    /*#bottom_part{*/
-        /*top: 75%;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 2.52em;*/
-    /*}*/
-
-    /*#bottom_part p{*/
-        /*font-size: 1.6em;*/
-    /*}*/
-/*}*/
-
-/*!* For very very very big screens *!*/
-/*@media screen and (min-width: 1980px){*/
-    /*header{*/
-        /*font-size: 4.8em;*/
-    /*}*/
-
-    /*#watch_trailer a{*/
-        /*font-size: 2em;*/
-    /*}*/
-
-    /*#bottom_part{*/
-        /*top: 75%;*/
-    /*}*/
-
-    /*#bottom_part h5{*/
-        /*font-size: 2.88em;*/
-    /*}*/
-
-    /*#bottom_part p{*/
-        /*font-size: 1.8em;*/
-    /*}*/
-/*}*/
-
-
-/* ---------------- */
-
+}

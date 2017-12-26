@@ -44,6 +44,6 @@ window.addEventListener('load', function() {
 
     Preloader('video').startCheckingLoading();
 
-    $("#youtube").modalVideo();
+    $(".watch_trailer").modalVideo();
 });
 
