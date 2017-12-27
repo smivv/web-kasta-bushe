@@ -128,12 +128,10 @@ header{
     padding: 3% 5% 2% 5%;
     cursor: pointer;
     letter-spacing: 1px;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     color: #ffffff !important;
     background: #f7be16;
     font-family: Franklin;
-    word-break: keep-all;
-    overflow-wrap: normal;
 }
 
 .watch_trailer:hover{
@@ -149,17 +147,23 @@ header{
     color: #e9b315;
 }
 
-.roles p{
+.roles span{
     font-family: Franklin;
     font-weight: 100;
     font-size: 1.5vw;
     letter-spacing: 2px;
     color: #fff;
-    margin-bottom: 0.6rem;
+    /*margin-bottom: 0.6rem;*/
+    display: inline-block;
+    margin-right: 0.2vw;
 }
 
 .social_icons{
     margin-top: 0.8em;
+}
+
+.social_icons .col{
+    padding: 0;
 }
 
 .icon{
@@ -282,7 +286,7 @@ header{
 
     .watch_trailer{
         font-size: 6vw;
-        margin-left: 0;
+        /*margin-left: 0;*/
         margin-bottom: 2vw;
         padding: 1% 7% 0% 7%;
     }
@@ -292,7 +296,12 @@ header{
     }
 
     .roles p{
-        font-size: 5vw;
+        margin-bottom: 0;
+    }
+
+    .roles span{
+        margin-bottom: 1vw;
+        font-size: 4.5vw;
     }
 
     .icon{
