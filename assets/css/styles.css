@@ -47,7 +47,11 @@ body{
     margin:0;
     padding:0;
     width:100%;
-    background-color: black;
+    background: black url(/images/clouds.jpg) no-repeat center;
+    background-size: cover;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
 }
 
 .vertical-center {
@@ -132,6 +136,8 @@ header{
     color: #ffffff !important;
     background: #f7be16;
     font-family: Franklin;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .watch_trailer:hover{
@@ -275,6 +281,9 @@ header{
 
 /* xs */
 @media screen and (max-width: 767px) {
+    html {
+        height: 70%;
+    }
     header{
         font-size: 4vw;
     }
@@ -289,6 +298,8 @@ header{
         /*margin-left: 0;*/
         margin-bottom: 2vw;
         padding: 1% 7% 0% 7%;
+        width: 50vw;
+        text-align: center;
     }
 
     .starring p{
