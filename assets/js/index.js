@@ -8,6 +8,9 @@ var api = {
         preloader.css('opacity', 0);
         trailer.css('opacity', 1);
         enter.css('opacity', 1);
+        setTimeout(function () {
+            preloader.css('display', 'none');
+        }, 300);
     },
 
     startCheckingLoading: function() {
@@ -40,6 +43,5 @@ if(bowser.mobile){
 
 
 $(document).ready(function () {
-
     $(".watch_trailer").modalVideo();
 });

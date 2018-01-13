@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e7612db8-bb10-49ba-9e9f-9860af5c43cc" name="Reg.ru bushe" url="http://37.140.192.79">
-        <fileTransfer host="37.140.192.79" port="21">
+        <fileTransfer host="37.140.192.79" port="21" rootFolder="/httpdocs/piter.film/">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
