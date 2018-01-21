@@ -17,7 +17,7 @@ var api = {
         video.on('click', function () {
             video.play();
         }).on('play', function () {
-            api.removePreloader();
+            // api.removePreloader();
         }).on('progress', function() {
             var p = Math.round(video[0].buffered.end(0)) /
                 Math.round(video[0].seekable.end(0));
