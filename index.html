@@ -13,18 +13,17 @@
 
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
-		<title>КАСТА | KASTA</title>
+		<title>Piter By</title>
 
         <link href="node_modules/fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
-        <link href="node_modules/modal-video/css/modal-video.min.css" rel="stylesheet">
 		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/jquery-modal/jquery.modal.min.css" rel="stylesheet">
 
 		<link href="assets/css/styles.css" rel="stylesheet">
 
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bowser/src/bowser.js"></script>
-        <script src="node_modules/modal-video/js/modal-video.min.js"></script>
-        <script src="node_modules/modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="node_modules/jquery-modal/jquery.modal.min.js"></script>
 	</head>
 	<body class="vertical-center">
         <div id="enter" class="container-fluid">
@@ -71,16 +70,16 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center d-block d-md-none">
-                    <a class="watch_trailer" data-video-id="QcH-_ny2o7g">
-                        СМОТРЕТЬ ТРЕЙЛЕР
+                    <a href="#film" class="watch_film" rel="modal:open">
+                        СМОТРЕТЬ ФИЛЬМ
                     </a>
                 </div>
                 <div class="col-12 col-md-2 col-lg-2 col-xl-2 offset-md-5 text-center starring">
                     <p>В РОЛЯХ:</p>
                 </div>
                 <div class="col-3 d-none d-md-block">
-                    <a class="watch_trailer" data-video-id="QcH-_ny2o7g">
-                        СМОТРЕТЬ ТРЕЙЛЕР
+                    <a href="#film" class="watch_film" rel="modal:open">
+                        СМОТРЕТЬ ФИЛЬМ
                     </a>
                 </div>
             </div>
@@ -176,16 +175,22 @@
             </div>
         </div>
         <div id="trailer" class="is_overlay">
-            <video id="video" width="100%" src="videos/KastaInstagram.mp4" height="auto" muted="muted" autoplay="autoplay" loop="loop" preload="auto" playsinline>
-                <source src="videos/KastaInstagram.mp4" type="video/mp4">
-                <!--				<source src="videos/KastaInstagram.mov" type="video/mov">-->
-                <!--				<source src="videos/KastaInstagram.webm" type="video/webm">-->
-                <!--				<source src="videos/KastaInstagram.ogv" type="video/ogg">-->
-            </video>
+            <img src="images/bg.jpg">
+            <!--<video id="video" width="100%" src="videos/KastaInstagram_0.mp4" height="auto" muted="muted" autoplay="autoplay" loop="loop" preload="auto" playsinline>-->
+                <!--<source src="videos/KastaInstagram_0.mp4" type="video/mp4">-->
+                <!--&lt;!&ndash;				<source src="videos/KastaInstagram.mov" type="video/mov">&ndash;&gt;-->
+                <!--&lt;!&ndash;				<source src="videos/KastaInstagram.webm" type="video/webm">&ndash;&gt;-->
+                <!--&lt;!&ndash;				<source src="videos/KastaInstagram.ogv" type="video/ogg">&ndash;&gt;-->
+            <!--</video>-->
         </div>
 
         <div id="preloader">
             <i id="wait" class="fa fa-spinner spinner"></i>
+        </div>
+
+        <div id="film" class="modal">
+            <iframe src="//vk.com/video_ext.php?oid=-125862355&id=456239038&hash=103b2f771f765544&hd=4"
+                    frameborder="0" allowfullscreen></iframe>
         </div>
 	</body>
 

@@ -30,18 +30,22 @@ var api = {
     }
 };
 
-if(bowser.mobile){
-    video.remove();
-    setTimeout(api.removePreloader(), 3000);
-    console.log('mobile');
-}else{
-    $('body').css('background-image', 'url()');
-    $(document).ready(function () {
-        api.startCheckingLoading();
-    });
-}
+// if(bowser.mobile){
+//     video.remove();
+//     setTimeout(api.removePreloader(), 3000);
+//     console.log('mobile');
+// }else{
+//     $('body').css('background-image', 'url()');
+//     $(document).ready(function () {
+//         api.startCheckingLoading();
+//     });
+// }
 
+// video.remove();
+setTimeout(api.removePreloader(), 3000);
 
 $(document).ready(function () {
-    $(".watch_trailer").modalVideo();
+    $(".watch_trailer").modal({
+        fadeDuration: 100
+    });
 });
