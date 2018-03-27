@@ -33,6 +33,18 @@
     }
 }
 
+@keyframes fadein{
+    0% { opacity:0; }
+    50% { opacity:0.5; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    0.5% { opacity:0.5; }
+    100% { opacity:1; }
+}
+
 html {
     font-size: 100%;
     display: table;
@@ -47,11 +59,12 @@ body{
     margin:0;
     padding:0;
     width:100%;
-    background: black url(/images/bg.jpg) no-repeat center;
+    background: black url(/images/bg.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center center;*/
+    animation: opacity 3s ease;
 }
 
 .vertical-center {
